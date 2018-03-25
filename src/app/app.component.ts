@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  public items : any;
+
+
+  constructor(){
+
+    this.items = [1,2,3,4,5,6,7,8,9];
+
+  }
+
+
+  public getItemsData() : void{
+    alert( this.items );
+    console.log( this.items );
+  }
+
 }
