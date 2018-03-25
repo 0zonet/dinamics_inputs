@@ -20,5 +20,12 @@ export class AppComponent {
     alert( this.items );
     console.log( this.items );
   }
+  
+  
+  public trackByFn(index: any, item: any) {
+    return index;
+  }
+  
+  
 
 }
